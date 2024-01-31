@@ -1,0 +1,21 @@
+data:
+ data_path: "D:/HAW-Hamburg_E/VS/Bread_Detection/Testv2icoco/"
+ output: "D:/HAW-Hamburg_E/VS/Bread_Detection/output/model_2023_12_13.pth"
+  
+
+
+training:
+  batch_size: 1
+  learning_rate: 0.005
+  momentum: 0.9
+  num_epochs: 100
+  save_model_path: "path/to/save/model"
+  tb: "D:/HAW-Hamburg_E/VS/Bread_Detection/output/tb"
+
+
+model:
+  pretrained: true
+  num_classes: 6  
+
+
+device: "cuda"
